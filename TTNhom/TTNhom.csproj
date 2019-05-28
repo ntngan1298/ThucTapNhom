@@ -145,6 +145,72 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\User\bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="Assets\User\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="Assets\User\bootstrap\css\bootstrap.css" />
+    <Content Include="Assets\User\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Assets\User\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="Assets\User\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="Assets\User\bootstrap\js\bootstrap.js" />
+    <Content Include="Assets\User\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Assets\User\themes\css\bootstrappage.css" />
+    <Content Include="Assets\User\themes\css\flexslider.css" />
+    <Content Include="Assets\User\themes\css\jquery.fancybox.css" />
+    <Content Include="Assets\User\themes\css\main.css" />
+    <Content Include="Assets\User\themes\images\arrow-p.png" />
+    <Content Include="Assets\User\themes\images\arrow-pleft.png" />
+    <Content Include="Assets\User\themes\images\bg.png" />
+    <Content Include="Assets\User\themes\images\carousel\2_1920x.jpg" />
+    <Content Include="Assets\User\themes\images\carousel\banner-1.jpg" />
+    <Content Include="Assets\User\themes\images\carousel\banner-2.jpg" />
+    <Content Include="Assets\User\themes\images\carousel\images %281%29.jpg" />
+    <Content Include="Assets\User\themes\images\carousel\images.jpg" />
+    <Content Include="Assets\User\themes\images\carousel\Luxurt.jpg" />
+    <Content Include="Assets\User\themes\images\carousel\slide3.jpg" />
+    <Content Include="Assets\User\themes\images\clients\1.png" />
+    <Content Include="Assets\User\themes\images\clients\2.png" />
+    <Content Include="Assets\User\themes\images\clients\3.jpg" />
+    <Content Include="Assets\User\themes\images\clients\4.jpg" />
+    <Content Include="Assets\User\themes\images\clients\5.jpg" />
+    <Content Include="Assets\User\themes\images\cloth\bootstrap-women-ware1.jpg" />
+    <Content Include="Assets\User\themes\images\cloth\bootstrap-women-ware2.jpg" />
+    <Content Include="Assets\User\themes\images\cloth\bootstrap-women-ware3.jpg" />
+    <Content Include="Assets\User\themes\images\cloth\bootstrap-women-ware4.jpg" />
+    <Content Include="Assets\User\themes\images\cloth\bootstrap-women-ware5.jpg" />
+    <Content Include="Assets\User\themes\images\cloth\bootstrap-women-ware6.jpg" />
+    <Content Include="Assets\User\themes\images\feature_img_1.png" />
+    <Content Include="Assets\User\themes\images\feature_img_2.png" />
+    <Content Include="Assets\User\themes\images\feature_img_3.png" />
+    <Content Include="Assets\User\themes\images\gotop.png" />
+    <Content Include="Assets\User\themes\images\ladies\1.jpg" />
+    <Content Include="Assets\User\themes\images\ladies\2.jpg" />
+    <Content Include="Assets\User\themes\images\ladies\3.jpg" />
+    <Content Include="Assets\User\themes\images\ladies\4.jpg" />
+    <Content Include="Assets\User\themes\images\ladies\5.jpg" />
+    <Content Include="Assets\User\themes\images\ladies\6.jpg" />
+    <Content Include="Assets\User\themes\images\ladies\7.jpg" />
+    <Content Include="Assets\User\themes\images\ladies\8.jpg" />
+    <Content Include="Assets\User\themes\images\ladies\9.jpg" />
+    <Content Include="Assets\User\themes\images\line_bar.png" />
+    <Content Include="Assets\User\themes\images\logo.png" />
+    <Content Include="Assets\User\themes\images\m1.png" />
+    <Content Include="Assets\User\themes\images\m2.png" />
+    <Content Include="Assets\User\themes\images\m3.png" />
+    <Content Include="Assets\User\themes\images\m4.png" />
+    <Content Include="Assets\User\themes\images\m5.png" />
+    <Content Include="Assets\User\themes\images\m6.png" />
+    <Content Include="Assets\User\themes\images\pageBanner.png" />
+    <Content Include="Assets\User\themes\images\project_img2.jpg" />
+    <Content Include="Assets\User\themes\images\project_img3.jpg" />
+    <Content Include="Assets\User\themes\images\project_img4.jpg" />
+    <Content Include="Assets\User\themes\images\project_img6.jpg" />
+    <Content Include="Assets\User\themes\js\common.js" />
+    <Content Include="Assets\User\themes\js\css\style.css" />
+    <Content Include="Assets\User\themes\js\jquery-1.7.2.min.js" />
+    <Content Include="Assets\User\themes\js\jquery.fancybox.js" />
+    <Content Include="Assets\User\themes\js\jquery.flexslider-min.js" />
+    <Content Include="Assets\User\themes\js\jquery.scrolltotop.js" />
+    <Content Include="Assets\User\themes\js\superfish.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -183,7 +249,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\User\" />
+    <Folder Include="Assets\User\themes\js\images\" />
+    <Folder Include="Assets\User\themes\js\js\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
