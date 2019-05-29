@@ -1,4 +1,4 @@
-﻿namespace TTNhom.Models.EF
+namespace TTNhom.Models.EF
 {
     using System;
     using System.Collections.Generic;
@@ -18,23 +18,18 @@
         [Key]
         public int MaNV { get; set; }
 
-        [Display(Name = "Tên NV")]
         [StringLength(100)]
         public string HoTen { get; set; }
 
-        [Display(Name = "Giới tính")]
         [StringLength(10)]
         public string GT { get; set; }
 
-        [Display(Name = "Địa chỉ")]
         [StringLength(100)]
         public string DiaChi { get; set; }
 
-        [Display(Name = "Số điện thoại")]
         [StringLength(10)]
         public string SDT { get; set; }
 
-        [Display(Name = "Số điện thoại")]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DonHang> DonHangs { get; set; }
     }

@@ -20,6 +20,7 @@ namespace TTNhom.Models.EF
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<SP> SPs { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -50,6 +51,14 @@ namespace TTNhom.Models.EF
             modelBuilder.Entity<SP>()
                 .Property(e => e.Gia)
                 .HasPrecision(18, 0);
+
+            modelBuilder.Entity<TaiKhoan>()
+                .Property(e => e.userName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<TaiKhoan>()
+                .Property(e => e.password)
+                .IsUnicode(false);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace TTNhom.Areas.Admin.Controllers
         }
         public ActionResult Create()
         {
-            return View()
+            return View();
         }
     }
 }

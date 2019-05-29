@@ -133,10 +133,13 @@
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\KhachHangController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoaiSPController.cs" />
+    <Compile Include="Areas\Admin\Controllers\NhanHieuController.cs" />
     <Compile Include="Areas\Admin\Controllers\NhanVienController.cs" />
     <Compile Include="Areas\Admin\Controllers\SanPhamController.cs" />
+    <Compile Include="Areas\Admin\Models\NhanHieuModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NguoidungController.cs" />
+    <Compile Include="DAO\UserDao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -149,6 +152,7 @@
     <Compile Include="Models\EF\NuocHoaDbContext.cs" />
     <Compile Include="Models\EF\SP.cs" />
     <Compile Include="Models\EF\sysdiagram.cs" />
+    <Compile Include="Models\EF\TaiKhoan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2143,6 +2147,8 @@
     <Content Include="Areas\Admin\Views\DonHang\Index.cshtml" />
     <Content Include="Areas\Admin\Views\KhachHang\Index.cshtml" />
     <Content Include="Areas\Admin\Views\NhanVien\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanHieu\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanHieu\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -2159,8 +2165,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Layout\LayoutNguoiDung.cshtml" />
     <Content Include="Views\Layout\MainMenu.cshtml" />
-    <Content Include="Views\Nguoidung\DangKy.cshtml" />
     <Content Include="Web.Config" />
+    <Content Include="Views\Nguoidung\DangNhap.cshtml" />
     <None Include="Web.Debug.Config">
       <DependentUpon>Web.Config</DependentUpon>
     </None>
@@ -2170,7 +2176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Assets\User\themes\js\images\" />
     <Folder Include="Assets\User\themes\js\js\" />
     <Folder Include="Views\Shared\" />
