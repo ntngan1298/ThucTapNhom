@@ -1,0 +1,37 @@
+﻿@using TTNhom.Models
+@model List<TTNhom.Models.EF.NhanHieu> 
+<section class="navbar main-menu">
+    <div class="navbar-inner main-menu">
+        <a href="index.html" class="logo pull-left"><img src="~/Assets/User/themes/images/logo.png" class="site_logo" alt=""></a>
+        <nav id="menu" class="pull-right">
+            <ul>
+                <li>
+                    
+                    <a href="./products.html">Woman</a>
+                    <ul>
+                        @foreach (var item in Model)
+                        {
+                            <li><a href="@item.TenNH"></a></li>
+                        }
+                    </ul>
+                </li>
+                <li>
+                    <a href="./products.html">Man</a>
+                    <ul>
+                        @foreach (var item in Model)
+                        {
+                            <li><a href="@item.TenNH"></a></li>
+                        }
+                    </ul>
+                    
+                </li>
+                <li><a href="./products.html">Best Seller</a></li>
+                <li><a href="./products.html">Top Seller</a></li>
+                <li><a href="./products.html">Produce</a></li>
+                <li><a href="./products.html">Contact </a></li>
+
+
+            </ul>
+        </nav>
+    </div>
+</section>

@@ -140,7 +140,6 @@
     <Compile Include="Models\EF\NhanVien.cs" />
     <Compile Include="Models\EF\NuocHoaDbContext.cs" />
     <Compile Include="Models\EF\SP.cs" />
-    <Compile Include="Models\EF\sysdiagram.cs" />
     <Compile Include="Models\EF\Taikhoan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -243,6 +242,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Layout\LayoutNguoiDung.cshtml" />
+    <Content Include="Views\Layout\MainMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

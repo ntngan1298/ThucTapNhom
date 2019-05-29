@@ -19,7 +19,6 @@ namespace TTNhom.Models.EF
         public virtual DbSet<NhanHieu> NhanHieux { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<SP> SPs { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Taikhoan> Taikhoans { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
