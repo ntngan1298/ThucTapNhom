@@ -38,6 +38,7 @@
                                 </th>
                                 <th class="cell100 sp-col5">
                                     @Html.DisplayNameFor(model => model.MoTa)
+                                    @*@Html.DisplayNameFor(model=> model.MaLSP)*@
                                 </th>
                                 <th class="cell100 sp-col2">
                                     @Html.DisplayNameFor(model => model.SolgTon)
@@ -64,7 +65,10 @@
                                     <div id="AnhBia"><img src="@Url.Content("~/HinhAnhSP/" + item.Anh)" width="100px" height="100px;"/></div>
                                 </td>
 
-                                <td class="cell100 sp-col5"> @Html.DisplayFor(modelItem => item.MoTa)</td>
+                                <td class="cell100 sp-col5">
+                                    @Html.DisplayFor(modelItem => item.MoTa)
+                                    @*@Html.DisplayFor(modelItem=> item.LoaiSP.TenLSP)*@
+                                </td>
 
                                 <td class="cell100 sp-col2"> @Html.DisplayFor(modelItem => item.SolgTon)</td>
                                 <td class="cell100 sp-col2">

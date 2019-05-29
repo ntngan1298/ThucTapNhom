@@ -1,4 +1,4 @@
-namespace TTNhom.Models.EF
+﻿namespace TTNhom.Models.EF
 {
     using System;
     using System.Collections.Generic;
@@ -18,20 +18,26 @@ namespace TTNhom.Models.EF
         [Key]
         public int MaSP { get; set; }
 
+        [Display(Name = "Tên Sản Phẩm")]
         [StringLength(50)]
         public string TenSP { get; set; }
 
+        [Display(Name = "Giá")]
         public decimal? Gia { get; set; }
 
+        [Display(Name = "KL")]
         public int? Khoiluong { get; set; }
 
+        [Display(Name = "Ảnh")]
         [StringLength(50)]
         public string Anh { get; set; }
 
+        [Display(Name = "Mô tả")]
         public string MoTa { get; set; }
 
+        [Display(Name = "SL Tồn")]
         public int? SolgTon { get; set; }
-
+        
         public int? MaLSP { get; set; }
 
         public int? MaNH { get; set; }
