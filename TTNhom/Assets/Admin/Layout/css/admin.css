@@ -1,0 +1,28 @@
+﻿body {
+}
+.admin-add {
+    width: 160px;
+    height: 30px;
+    color: #fdfdfd;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    margin-left: 822px;
+}
+.admin-add a:hover{
+    text-decoration:none;
+}
+.table-view{
+    border:1px solid #808080;
+    color:#a826a5;
+}
+.table-view tr:nth-child(2n+1){
+    background-color:#e9e7ea;
+}
+.table-tit{text-align:center;
+}
+.box-view{
+    
+    height:550px;
+    overflow:auto
+}

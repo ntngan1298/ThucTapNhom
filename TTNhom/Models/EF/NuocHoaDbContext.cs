@@ -19,21 +19,13 @@ namespace TTNhom.Models.EF
         public virtual DbSet<NhanHieu> NhanHieux { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<SP> SPs { get; set; }
-        public virtual DbSet<Taikhoan> Taikhoans { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CTDH>()
                 .Property(e => e.thanhtien)
                 .HasPrecision(18, 0);
-
-            modelBuilder.Entity<KhachHang>()
-                .Property(e => e.Taikhoan)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<KhachHang>()
-                .Property(e => e.MatKhau)
-                .IsUnicode(false);
 
             modelBuilder.Entity<KhachHang>()
                 .Property(e => e.Email)
@@ -43,6 +35,14 @@ namespace TTNhom.Models.EF
                 .Property(e => e.SDT)
                 .IsUnicode(false);
 
+            modelBuilder.Entity<KhachHang>()
+                .Property(e => e.Taikhoan)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<KhachHang>()
+                .Property(e => e.Matkhau)
+                .IsUnicode(false);
+
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.SDT)
                 .IsUnicode(false);
@@ -50,14 +50,6 @@ namespace TTNhom.Models.EF
             modelBuilder.Entity<SP>()
                 .Property(e => e.Gia)
                 .HasPrecision(18, 0);
-
-            modelBuilder.Entity<Taikhoan>()
-                .Property(e => e.username)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Taikhoan>()
-                .Property(e => e.matkhau)
-                .IsUnicode(false);
         }
     }
 }
