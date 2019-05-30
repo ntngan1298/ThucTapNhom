@@ -1,4 +1,4 @@
-namespace TTNhom.Models.EF
+﻿namespace TTNhom.Models.EF
 {
     using System;
     using System.Collections.Generic;
@@ -17,16 +17,19 @@ namespace TTNhom.Models.EF
 
         [Key]
         public int MaNV { get; set; }
-
+        [Required(ErrorMessage ="Bạn phải nhập Tên")]
         [StringLength(100)]
         public string HoTen { get; set; }
 
+        [Required(ErrorMessage = "Bạn phải nhập giới tính")]
         [StringLength(10)]
         public string GT { get; set; }
 
+        [Required(ErrorMessage = "Bạn phải nhập địa chỉ ")]
         [StringLength(100)]
         public string DiaChi { get; set; }
 
+        [Required(ErrorMessage = "Bạn phải nhập số điện thoại")]
         [StringLength(10)]
         public string SDT { get; set; }
 

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<TTNhom.Models.EF.TaiKhoan>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Tài Khoản Quản trị viên</h2>
+
+<p>
+    @Html.ActionLink("CreateNew", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.userName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.userName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.userId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.userId }) |
+            @Ajax.ActionLink("Xóa", "Delete", new { @id =item.userId},  new AjaxOptions
+
+       {  Confirm = "Bạn có muốn xoá bản ghi này?",
+           OnComplete = "$('#row_" + @item.userId + "').remove()",
+           HttpMethod = "Delete"
+       })
+        </td>
+    </tr>
+    }
+
+</table>

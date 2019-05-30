@@ -21,12 +21,6 @@ namespace TTNhom.Models.EF
         [StringLength(100)]
         public string HoTen { get; set; }
 
-        [StringLength(50)]
-        public string Taikhoan { get; set; }
-
-        [StringLength(50)]
-        public string MatKhau { get; set; }
-
         [StringLength(100)]
         public string Email { get; set; }
 
@@ -40,6 +34,12 @@ namespace TTNhom.Models.EF
 
         [Column(TypeName = "date")]
         public DateTime? NS { get; set; }
+
+        [StringLength(50)]
+        public string Taikhoan { get; set; }
+
+        [StringLength(32)]
+        public string Matkhau { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DonHang> DonHangs { get; set; }

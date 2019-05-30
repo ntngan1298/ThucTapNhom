@@ -1,0 +1,98 @@
+﻿@model IEnumerable<TTNhom.Models.EF.SP>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 style="font-family:Georgia, 'Times New Roman', Times, serif; color:blue; text-align:center;">Sản Phẩm</h2>
+
+<div class="admin-add">
+    <p style="text-align:center">
+
+        @Html.ActionLink("Thêm mới", "Create")
+    </p>
+</div>
+
+
+
+<div class="limiter">
+    <div class="container-table100" style="padding-left: 10px; padding-top:0px;">
+        <div class="wrap-table100" style="width:100%">
+            <div class="table100 ver1 m-b-110" style="width: 1124px;">
+                <div class="table100-head">
+                    <table>
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="cell100  sp-col1">
+                                    @Html.DisplayNameFor(model => model.TenSP)
+                                </th>
+                                <th class="cell100 sp-col3">
+                                    @Html.DisplayNameFor(model => model.Gia)
+                                </th>
+                                <th class="cell100 sp-col2">
+                                    @Html.DisplayNameFor(model => model.Khoiluong)
+                                </th>
+                                <th class="cell100 sp-col4">
+                                    @Html.DisplayNameFor(model => model.Anh)
+                                </th>
+                                <th class="cell100 sp-col5">
+                                    @Html.DisplayNameFor(model => model.MoTa)
+                                    @*@Html.DisplayNameFor(model=> model.MaLSP)*@
+                                </th>
+                                <th class="cell100 sp-col2">
+                                    @Html.DisplayNameFor(model => model.SolgTon)
+                                </th>
+                                <th class="cell100 sp-col2">
+                                </th>
+
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <div class="table100-body js-pscroll">
+                    <table>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                            <tr class="row100 body">
+                                <td class="cell100 sp-col1"> @Html.DisplayFor(modelItem => item.TenSP)</td>
+                                <td class="cell100 sp-col3"> @Html.DisplayFor(modelItem => item.Gia)</td>
+                                <td class="cell100 sp-col2"> @Html.DisplayFor(modelItem => item.Khoiluong)</td>
+                                <td class="cell100 sp-col4">
+
+                                    <div id="AnhBia"><img src="@Url.Content("~/HinhAnhSP/" + item.Anh)" width="100px" height="100px;"/></div>
+                                </td>
+
+                                <td class="cell100 sp-col5">
+                                    @Html.DisplayFor(modelItem => item.MoTa)
+                                    @*@Html.DisplayFor(modelItem=> item.LoaiSP.TenLSP)*@
+                                </td>
+
+                                <td class="cell100 sp-col2"> @Html.DisplayFor(modelItem => item.SolgTon)</td>
+                                <td class="cell100 sp-col2">
+                                    @Html.ActionLink("Sửa", "Edit", new { id = item.MaSP }) |
+                                    @Html.ActionLink("Xem", "Details", new { id = item.MaSP }) |
+                                    @Html.ActionLink("Xóa", "Delete", new { id = item.MaSP })
+                                </td>
+                            </tr>
+                            }
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
