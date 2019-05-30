@@ -1,0 +1,12 @@
+﻿@using TTNhom.Models;
+@model TTNhom.Models.EF.SP
+@model TTNhom.Models.EF.NhanHieu
+@section Sanpham {
+    <div id="ThuongHieu" class="button">
+
+        @foreach (var item in Model)
+        {<a href="#" class="button"> @item. </a>
+    }
+
+    </div>
+}

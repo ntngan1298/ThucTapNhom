@@ -11,7 +11,7 @@
     <link href="~/Assets/User/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Assets/User/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
     <link href="~/Assets/User/themes/css/bootstrappage.css" rel="stylesheet" />
-
+    <link href="~/Content/screen.css" rel="stylesheet" />
     <!-- global styles -->
 
     <link href="~/Assets/User/themes/css/flexslider.css" rel="stylesheet" />
@@ -33,7 +33,7 @@
         <div class="row">
             <div class="span4">
                 <form method="POST" class="search_form">
-                    <input type="text" class="input-block-level search-query" Placeholder="eg. T-sirt">
+                    <input type="text" class="input-block-level search-query" Placeholder="eg. Gucci">
                 </form>
             </div>
             <div class="span8">
@@ -49,6 +49,41 @@
         </div>
     </div>
     <div id="wrapper" class="container">
+        <section class="navbar main-menu">
+            <div class="navbar-inner main-menu">
+                <a href="index.html" class="logo pull-left"><img src="~/Assets/User/themes/images/logo.png" class="site_logo" alt=""></a>
+                <nav id="menu" class="pull-right">
+                    <ul>
+                        <li>
+                            <a href="./products.html">Woman</a>
+                            <ul>
+                                <li><a href="#"></a>Gucci</li>
+                                <li><a href="#"></a>Dior</li>
+                                <li><a href="#"></a>Chanel</li>
+                                <li><a href="#"></a>Burberry</li>
+                                <li><a href="#"></a>Calvin Klein</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./products.html">Man</a>
+                            <ul>
+                                <li><a href="#"></a>Gucci</li>
+                                <li><a href="#"></a>Dior</li>
+                                <li><a href="#"></a>Chanel</li>
+                                <li><a href="#"></a>Burberry</li>
+                                <li><a href="#"></a>Calvin Klein</li>
+                            </ul>
+                        </li>
+                        <li><a href="./products.html">Best Seller</a></li>
+                        <li><a href="./products.html">Top Seller</a></li>
+                        <li><a href="./products.html">Produce</a></li>
+                        <li><a href="./products.html">Contact </a></li>
+
+
+                    </ul>
+                </nav>
+            </div>
+        </section>
         @RenderSection("slide", required: false)
         <!-- <section class="header_text">
         We stand for top quality templates. Our genuine developers always optimized bootstrap commercial templates.
@@ -289,7 +324,7 @@
                 </div>
                 <div class="span5">
                     <p class="logo"><img src="~/Assets/User/themes/images/logo.png" class="site_logo" alt=""></p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. the  Lorem Ipsum has been the industry's standard dummy text ever since the you.</p>
+                    <p>Thank you for shopping. See You Later.</p>
                     <br />
                     <span class="social_icons">
                         <a class="facebook" href="#">Facebook</a>
@@ -321,4 +356,4 @@
         });
     </script>
 </body>
-</html>
+</html>]

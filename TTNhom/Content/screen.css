@@ -1,0 +1,33 @@
+﻿body {
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-weight: 100;
+    background: #edeae9;
+    color: #707070;
+    line-height: 1.75em;
+    font-size: 1em;
+}
+.button, input[type="button"], button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #444444;
+    padding: 1em 3em;
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+    border: 0px;
+    font-size: 1em;
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+    /* line 449, ../sass/screen.scss */
+    .button:hover, input[type="button"]:hover, button:hover {
+        background: #000;
+    }
+
