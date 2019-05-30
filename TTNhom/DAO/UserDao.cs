@@ -33,5 +33,45 @@ namespace TTNhom.DAO
         {
             return db.TaiKhoans.SingleOrDefault(x => x.userName == userName);
         }
+        public bool Update (TaiKhoan entity)
+        {
+            try
+            {
+                var user = db.TaiKhoans.Find(entity.userId);
+                user.userName = entity.userName;
+                if (!string.IsNullOrEmpty(entity.password))
+                {
+                    user.password = entity.password;
+
+                }
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public TaiKhoan ViewDetail(int id)
+        {
+            return db.TaiKhoans.Find(id);
+        }
+
+        public bool Delete(int id)
+        {
+            try
+            {
+
+                var user = db.TaiKhoans.Find(id);
+                db.TaiKhoans.Remove(user);
+                db.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+           
+        }
     }
 }
